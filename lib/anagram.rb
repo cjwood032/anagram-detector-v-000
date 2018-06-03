@@ -6,11 +6,13 @@ class Anagram
   def match(words)
     word_arr=%w(words)
     i=0
+    match_arr=[]
     while i < word_arr.length
       if @word.split("").sort==word_arr[i].split("").sort
-        return word_arr[i]
+        match_arr << word_arr[i]
       end
       i+=1
     end
+    return match_arr
   end
 end
