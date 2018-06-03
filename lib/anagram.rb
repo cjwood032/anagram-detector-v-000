@@ -9,8 +9,7 @@ class Anagram
     i=0
     match_arr=[]
     while i < word_arr.length
-      if @word.split("").sort==word_arr[i].split("").sort
-        binding.pry
+      if @word.split("").sort == word_arr[i].split("").sort
         match_arr << word_arr[i]
       end
       i+=1
