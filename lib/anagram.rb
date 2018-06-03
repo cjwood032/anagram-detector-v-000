@@ -4,8 +4,7 @@ class Anagram
   def initialize(word)
     @word=word
   end
-  def match(words)
-    word_arr=%w(words)
+  def match(word_arr)
     i=0
     match_arr=[]
     while i < word_arr.length
